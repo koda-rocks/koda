@@ -11,4 +11,4 @@
 4. Create a virtualenv ` mkvirtualenv koda --python=/path/to/python3`.
 5. Install the requirements `pip install -r requirements.txt`
 6. Navigate to the koda directory and the entry is the pizza.py file
-7. Run `python pizza.py` to test what we currently have.
+7. Run `python pizza.py example.in` to test what we currently have.
