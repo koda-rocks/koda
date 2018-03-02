@@ -105,7 +105,7 @@ def check_array_slice_for_minimum_condition(pizza_slice, minimum_for_each_slice,
     if not (mushroom_count and tomato_count):
         return False
     pizza_slice_count = tomato_count + mushroom_count
-    slice_is_satisfied = (tomato_count == minimum_for_each_slice)
+    slice_is_satisfied = (tomato_count >= minimum_for_each_slice) and (mushroom_count >= minimum_for_each_slice) and (pizza_slice_count <= maximum_for_both_slices)
     return slice_is_satisfied
 
 def word_to_list(wrd):
@@ -297,6 +297,8 @@ def rectPatterns(np_array, rows, columns, minimum, maximum):
         positions = new_positions if len(new_positions) > len(positions) else positions
         positions_and_holes = (positions, new_np_array)
     return positions_and_holes
-    
+
+def move(x1, y1, x2, y2):
+    x_max, y_max = max[x1, x2], max[y1, y2]
 if __name__ == '__main__':
     main2()

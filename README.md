@@ -12,3 +12,6 @@
 5. Install the requirements `pip install -r requirements.txt`
 6. Navigate to the koda directory and the entry is the pizza.py file
 7. Run `python pizza.py example.in` to test what we currently have.
+
+
+8. Run `python car.py car_sample.in` to test what we currently have. This will write out the result in car_sample.txt
